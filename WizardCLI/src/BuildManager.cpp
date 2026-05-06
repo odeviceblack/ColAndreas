@@ -3,6 +3,7 @@
 #include <BuildManager.h>
 #include <ImgManager.hpp>
 #include <ColManager.hpp>
+#include <cstring>
 
 BuildManager::BuildManager(Reporter* rep, std::string& GTADirectory, std::string& OutDirectory, bool SAMPObjects, bool CustomObjects)
 	: reporter(rep), GTAInstallDirectory(GTADirectory), OutfileDirectory(OutDirectory), UsingSAMPObjects(SAMPObjects), UsingCustomObjects(CustomObjects) {
